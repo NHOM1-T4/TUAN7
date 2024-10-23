@@ -65,7 +65,7 @@ public class TaiKhoan {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("nhap so tien can rut: ");
 		soTienRut = sc.nextFloat();
-		if (this.soDu >= soTienRut) {
+		if (this.soDu >= soTienRut && soTienRut > 0) {
 			System.out.println("rut tien thanh cong !");
 			this.soDu = soDu - soTienRut;
 		} else
